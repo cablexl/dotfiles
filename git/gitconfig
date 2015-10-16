@@ -1,0 +1,30 @@
+[user]
+	name = Frank de Jong
+	email = frankdejong.tx@gmail.com 
+[diff]
+	tool = vimdiff
+[alias]
+  st = status
+  ci = commit -v
+  co = checkout
+  di = diff
+  amend = commit --amend
+  aa = add --all
+  fa = fetch --all
+  pom = push origin master
+  b = branch
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
+  prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
+[push]
+	default = simple
+[color]
+	ui = true
+[help]
+	autocorrect = 1
+[core]
+	excludesfile = /Users/frank/.gitignore_global
+	pager = less -r
+#[url "git@github.com:"]
+#	insteadOf = https://github.com/
+[pull]
+	rebase = true
