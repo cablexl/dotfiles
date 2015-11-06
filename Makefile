@@ -1,4 +1,4 @@
-DOT_DIR=/Users/frank/dotfiles
+DOT_DIR=/Users/fdejong/dotfiles
 
 all: link
 
