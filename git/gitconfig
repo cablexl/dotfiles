@@ -1,31 +1,29 @@
 [user]
-	name = Frank de Jong
-	email = frankdejong.tx@gmail.com 
+    name = Frank de Jong
+    email = cablexl@gmail.com 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [alias]
-  st = status
-  ci = commit -v
-  co = checkout
-  di = diff
-  amend = commit --amend
-  aa = add --all
-  fa = fetch --all
-  pom = push origin master
-  b = branch
-  ignored = !git ls-files -v | grep "^[[:lower:]]"
-  prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
+    aa = add --all
+    amend = commit --amend
+    b = branch
+    ci = commit -v
+    co = checkout
+    di = diff
+    fa = fetch --all
+    ignored = !git ls-files -v | grep "^[[:lower:]]"
+    pom = push origin master
+    prune-local = !git branch --merged | tr -d '*' | grep -v dev | xargs -n1 git branch -d
+    st = status
 [push]
-	default = simple
+    default = simple
 [color]
-	ui = true
-[help]
-	autocorrect = 1
+    ui = true
 [core]
     editor = vim
-	excludesfile = /Users/frank/.gitignore_global
-	pager = less -r
+    excludesfile = /Users/frank/.gitignore_global
+    pager = less -r
 #[url "git@github.com:"]
 #	insteadOf = https://github.com/
 [pull]
-	rebase = true
+    rebase = true
