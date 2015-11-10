@@ -50,6 +50,8 @@ set listchars=tab:▸\ ,eol:¬,trail:·
 nmap <leader>l :set list!<CR>
 " extend syntax highlighting to 6000
 set smc=6000
+set number
+set relativenumber
 
 """ solarized settings
 syntax enable
@@ -89,3 +91,6 @@ nnoremap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
 nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
 nnoremap <silent> {Right-Mapping} :TmuxNavigateRight<cr>
 nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
+
+" remove ex-mode
+nnoremap Q <nop>
