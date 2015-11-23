@@ -85,7 +85,7 @@ nnoremap <Leader>] :bnext<CR>
 nnoremap <Leader>[ :bprev<CR>
 
 " tmux navigator settings
-let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_no_mappings = 0
 nnoremap <silent> {Left-mapping} :TmuxNavigateLeft<cr>
 nnoremap <silent> {Down-Mapping} :TmuxNavigateDown<cr>
 nnoremap <silent> {Up-Mapping} :TmuxNavigateUp<cr>
