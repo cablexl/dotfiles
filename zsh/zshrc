@@ -17,10 +17,6 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 autoload -Uz compinit
 compinit
 
-source /Users/$(whoami)/.zsh/zsh-git-prompt/zshrc.sh
-
-PROMPT='[%B%m] %~%b$(git_super_status) %(!.#.~) '
-
 # useful aliases
 alias ls="gls --color"
 alias top="sudo htop"
@@ -31,3 +27,5 @@ export PATH=$PATH:/usr/local/sbin:/usr/local/go/bin
 export GOPATH=${HOME}/go
 export PATH=$PATH:$GOPATH/bin
 export HOMEBREW_GITHUB_API_TOKEN=1300b9907a61b5291e64672eb88ffcb1c662e462
+
+source /Users/$(whoami)/.zsh/prompt_lean_setup

@@ -94,3 +94,5 @@ nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
 
 " remove ex-mode
 nnoremap Q <nop>
+
+set noswapfile
