@@ -22,9 +22,12 @@ alias top="sudo htop"
 
 # allow reverse tab through menu selection
 bindkey '^[[Z' reverse-menu-complete
-export PATH=$PATH:/usr/local/sbin:/usr/local/go/bin
+export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH:/usr/local/sbin:/usr/local/go/bin
 export GOPATH=${HOME}/go
 export PATH=$PATH:$GOPATH/bin
 export HOMEBREW_GITHUB_API_TOKEN=1300b9907a61b5291e64672eb88ffcb1c662e462
 
 source /Users/$(whoami)/.zsh/prompt_lean_setup
+alias emacs="Emacs -nw"
+
+KEYTIMEOUT=1

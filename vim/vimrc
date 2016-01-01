@@ -6,7 +6,7 @@ Plug 'bling/vim-airline'
 Plug 'edkolev/tmuxline.vim' " further configuration required
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-sensible' 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 """ syntax/completion plugins
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/syntastic'
@@ -72,6 +72,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+""" timeout settings
+set timeoutlen=1000 
+set ttimeoutlen=0
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
@@ -89,9 +93,9 @@ set laststatus=2
 let g:syntastic_javascript_checkers = ['eslint']
 
 " key bindings
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>] :bnext<CR>
-nnoremap <Leader>[ :bprev<CR>
+" nnoremap <Leader>w :w<CR>
+" nnoremap <Leader>] :bnext<CR>
+" nnoremap <Leader>[ :bprev<CR>
 
 " tmux navigator settings
 let g:tmux_navigator_no_mappings = 0
@@ -127,3 +131,5 @@ augroup END
 
 set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h14 
 
+let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_open_multiple_files = 'i'
