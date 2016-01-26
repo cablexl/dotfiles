@@ -21,7 +21,6 @@ Plug 'tpope/vim-surround' " csFT (From/To)
 Plug 'fatih/vim-go' " further configuration might be needed.
 Plug 'nsf/gocode' " have to go setup the filesystem stuff.
 """javascript/web development plugins
-Plug 'jelera/vim-javascript-syntax'
 Plug 'leshill/vim-json'
 Plug 'moll/vim-node'
 Plug 'mxw/vim-jsx'
@@ -95,9 +94,9 @@ set laststatus=2
 let g:syntastic_javascript_checkers = ['eslint']
 
 " key bindings
-" nnoremap <Leader>w :w<CR>
-" nnoremap <Leader>] :bnext<CR>
-" nnoremap <Leader>[ :bprev<CR>
+ nnoremap <Leader>w :w<CR>
+ nnoremap <Leader>j :bnext<CR>
+ nnoremap <Leader>k :bprev<CR>
 
 " tmux navigator settings
 let g:tmux_navigator_no_mappings = 0
@@ -132,6 +131,10 @@ au BufEnter * RainbowParenthesesLoadBraces
 augroup END
 
 set guifont=Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline:h14 
+let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|\.hg$\|\.svn$\|bower_components$\|dist$\|node_modules$\|project_files$\|test$',
+    \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
 let g:ctrlp_open_new_file = 'r'
 let g:ctrlp_open_multiple_files = 'i'

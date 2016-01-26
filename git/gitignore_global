@@ -2,12 +2,10 @@
 .DS_Store
 tags
 .tags
-_projectnotes.txt
 node_modules/
+target/
+build/
+dist/
 *.class
 *.jar
 npm-debug.log
-_site/
-.sass-cache/
-.bundle/
-.env
