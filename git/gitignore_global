@@ -8,4 +8,5 @@ build/
 dist/
 *.class
 *.jar
+!gradle-wrapper.jar
 npm-debug.log
