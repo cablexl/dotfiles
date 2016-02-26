@@ -26,11 +26,13 @@ compinit
 
 export GOPATH=${HOME}/go
 export PATH=$PATH:$GOPATH/bin
-export GRADLE_HOME=/usr/local/Cellar/gradle/2.9
+export GRADLE_HOME=/usr/local/Cellar/gradle/2.11
 export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH:/usr/local/sbin:/usr/local/go/bin:$GOPATH/bin:$GRADLE_HOME/bin
+export MONO_THREADS_PER_CPU=2000
 
 source /Users/$(whoami)/.zsh/prompt_lean_setup
 
+# some helpful aliases
 alias ls="gls --color"
 alias top="sudo htop"
 alias pp="python -m json.tool"
@@ -39,4 +41,5 @@ alias gl='git log --graph --full-history --all --color --pretty=format:"%x1b[31m
 source $HOME/.github_token
 
 
-[ -s "/Users/fdejong/.dnx/dnvm/dnvm.sh" ] && . "/Users/fdejong/.dnx/dnvm/dnvm.sh" # Load dnvm
+
+[ -s "/Users/frank/.dnx/dnvm/dnvm.sh" ] && . "/Users/frank/.dnx/dnvm/dnvm.sh" # Load dnvm

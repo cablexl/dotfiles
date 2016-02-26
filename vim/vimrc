@@ -2,7 +2,8 @@ call plug#begin()
 """ general vim-niceness plugins
 Plug 'airblade/vim-rooter'
 Plug 'altercation/vim-colors-solarized'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim' " further configuration required
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-sensible' 
