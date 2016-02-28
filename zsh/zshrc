@@ -28,7 +28,9 @@ export GOPATH=${HOME}/go
 export PATH=$PATH:$GOPATH/bin
 export GRADLE_HOME=/usr/local/Cellar/gradle/2.11
 export PATH=/Applications/Emacs.app/Contents/MacOS:$PATH:/usr/local/sbin:/usr/local/go/bin:$GOPATH/bin:$GRADLE_HOME/bin
-export MONO_THREADS_PER_CPU=2000
+#export MONO_THREADS_PER_CPU=2000
+#export MONO_MANAGED_WATCHER=disabled
+export ASPNET_ENV=Development
 
 source /Users/$(whoami)/.zsh/prompt_lean_setup
 
